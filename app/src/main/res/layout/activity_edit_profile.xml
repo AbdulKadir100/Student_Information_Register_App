@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+    <ImageView
+        android:id="@+id/image_choose"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:background="@drawable/image_shape"
+        android:onClick="ChooseImage"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="6dp"
+        android:background="@drawable/text_shape"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/name_et"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Student ID"
+        android:textSize="20sp"
+        android:layout_height="45dp"
+        android:padding="6dp"
+        android:background="@drawable/text_shape"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/id_et"
+        android:autoText="true"
+        android:inputType="number"
+        tools:ignore="Deprecated" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="6dp"
+        android:background="@drawable/text_shape"
+        android:hint="Branch"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/branch_et"
+        android:autoText="true"
+        android:inputType="text"
+        tools:ignore="Deprecated" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="6dp"
+        android:background="@drawable/text_shape"
+        android:hint="City"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/city_et"
+        android:autoText="true"
+        android:inputType="text"
+        tools:ignore="Deprecated" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="6dp"
+        android:background="@drawable/text_shape"
+        android:hint="Contact"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/contact_et"
+        android:autoText="true"
+        android:inputType="phone"
+        tools:ignore="Deprecated" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#FFF"
+        android:background="@drawable/btn_shape"
+        android:layout_margin="10dp"
+        android:id="@+id/save_profile_btn"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="invisible"/>
+
+
+
+
+
+
+</LinearLayout>
